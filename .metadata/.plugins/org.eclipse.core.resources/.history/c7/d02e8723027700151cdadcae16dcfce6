@@ -1,0 +1,31 @@
+package net.picklez.as.exercises;
+
+import java.util.Scanner;
+
+/**
+ * @author Ben Pickering
+ * @since 20 Oct 2015 | 09:06:56
+ */
+
+public class MultiplicationTables {
+	
+	static int num = 12;
+	
+	public static void main(String[] args) {
+		System.out.println("Enter number");
+		try {
+		Scanner input = new Scanner(System.in);
+		
+		num = input.nextInt();
+		
+		for (int i = 1; i < 12; i++) {
+			System.out.println(i*num);
+		}
+		}catch (java.util.InputMismatchException ime) {
+			
+		}
+	}
+
+	
+	
+}

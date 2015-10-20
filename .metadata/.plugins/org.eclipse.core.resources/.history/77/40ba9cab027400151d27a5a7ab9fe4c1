@@ -1,0 +1,34 @@
+package net.picklez.as.exercises;
+
+import java.util.Scanner;
+
+/**
+ * @author Ben Pickering
+ * @since 16 Oct 2015 | 13:33:19
+ */
+
+public class TestResults {
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		float percentage = scanner.nextFloat();
+		
+		
+	}
+	
+	public static char getGradeFromPercentage(float p) {
+		
+		if (p <= 50) {
+			if (p <= 70) {
+				if (p <= 90) {
+					if (p >= 90) {
+						
+					}
+				}
+			}
+		}
+		
+		return 'u';
+	}
+
+}

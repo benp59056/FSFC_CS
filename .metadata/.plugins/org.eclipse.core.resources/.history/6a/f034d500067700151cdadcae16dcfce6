@@ -1,0 +1,22 @@
+package net.picklez.as.exercises;
+
+/**
+ * @author Ben Pickering
+ * @since 20 Oct 2015 | 09:38:02
+ */
+
+public class DelayLoop {
+
+	public static void main(String[] args) {
+		
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				for (int k = 0; k < 5; k++) {
+					
+				}
+			}
+		}
+		
+	}
+	
+}

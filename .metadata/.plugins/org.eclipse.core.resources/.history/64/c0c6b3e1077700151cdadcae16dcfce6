@@ -1,0 +1,14 @@
+package net.picklez.as.exercises;
+
+/**
+ * @author Ben Pickering
+ * @since 20 Oct 2015 | 09:52:01
+ */
+
+public class Averages {
+
+	public static void main(String[] args) {
+		
+	}
+	
+}

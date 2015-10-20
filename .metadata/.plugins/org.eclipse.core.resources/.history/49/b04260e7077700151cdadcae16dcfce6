@@ -1,0 +1,16 @@
+package net.picklez.as.exercises;
+
+import net.picklez.utils.MathUtils;
+
+/**
+ * @author Ben Pickering
+ * @since 20 Oct 2015 | 09:52:01
+ */
+
+public class Averages {
+
+	public static void main(String[] args) {
+		System.out.println("Average is " + MathUtils.averageOf(1, 2, 3));
+	}
+	
+}

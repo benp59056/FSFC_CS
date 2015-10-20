@@ -1,0 +1,14 @@
+package net.picklez.as.exercises;
+
+/**
+ * @author Ben Pickering
+ * @since 20 Oct 2015 | 09:31:30
+ */
+
+public class TestingEvebs {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}
