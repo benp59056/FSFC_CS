@@ -1,0 +1,35 @@
+package net.picklez.as.exercises;
+
+import java.util.Scanner;
+
+/**
+ * @author Ben Pickering
+ * @since 3 Nov 2015 | 09:27:49
+ */
+
+public class NumberGuessing {
+	
+	static boolean correct = false;
+	static boolean running = true;
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		while (!correct && running) {
+			try {
+				System.out.println("Please enter a guess");
+				int guess = scanner.nextInt();
+				System.out.println(guess);
+			} catch (java.util.InputMismatchException e) {
+				System.out.println("\nYour input was in an incorrect format");
+				running = false;
+			}
+		}
+		
+		if (correct) {
+			
+		}
+		System.out.println("Closing.");
+	}
+	
+}

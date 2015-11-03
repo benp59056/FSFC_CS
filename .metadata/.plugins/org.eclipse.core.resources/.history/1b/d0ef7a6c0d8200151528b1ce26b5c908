@@ -1,0 +1,26 @@
+package net.picklez.as.exercises;
+
+import java.util.Scanner;
+
+/**
+ * @author Ben Pickering
+ * @since 3 Nov 2015 | 09:27:49
+ */
+
+public class NumberGuessing {
+	
+	static boolean correct = false;
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		while (!correct) {
+			try {
+				int guess = scanner.nextInt();
+			} catch (java.util.InputMismatchException e) {
+			
+			}
+		}
+	}
+	
+}
