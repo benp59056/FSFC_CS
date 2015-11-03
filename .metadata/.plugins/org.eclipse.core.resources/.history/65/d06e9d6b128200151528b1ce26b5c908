@@ -16,7 +16,18 @@ public class RightAngledTri {
 		
 		try {
 			
+			int curRow = 1;
+			int curNum = 0;
 			
+			String row = "";
+			
+			for (int i = 0; i < 100; i++) {
+				if (curNum == curRow) {
+					curRow++;
+				}
+				
+				System.out.print(i + " ");
+			}
 			
 			
 		} catch (InputMismatchException e) {

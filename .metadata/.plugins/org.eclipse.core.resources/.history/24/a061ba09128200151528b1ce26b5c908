@@ -38,14 +38,14 @@ public class Dates {
 				correct = false;
 			}
 			
+			
+			
 			if (correct)
 				System.out.println("That is a correct date");
 			
 		} catch (InputMismatchException e) {
 			System.out.println("There was a problem parsing the input.");
 		} catch (NumberFormatException ne) {
-			System.out.println("There was a problem parsing your input");
-		} catch (ArrayIndexOutOfBoundsException oob) {
 			System.out.println("There was a problem parsing your input");
 		}
 		
