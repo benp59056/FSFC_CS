@@ -1,0 +1,32 @@
+package net.picklez.as.exercises.triangle;
+
+/**
+ * @author Ben Pickering
+ * @since 3 Nov 2015 | 10:15:23
+ */
+
+
+
+public class Row {
+	
+	int length;
+	int[] nums;
+	int startNum;
+	int endNum;
+	
+	public Row(int len) {
+		length = len;
+	}
+	
+	public void print() {
+		
+	}
+	
+	public void setStartNum(int i) {
+		this.startNum = i;
+	}
+	
+	public int getEndNum() {
+		return endNum;
+	}
+}
