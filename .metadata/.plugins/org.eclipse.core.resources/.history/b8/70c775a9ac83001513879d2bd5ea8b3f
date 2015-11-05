@@ -1,0 +1,18 @@
+package net.picklez.as.exercises;
+
+/**
+ * @author Ben Pickering
+ * @since 5 Nov 2015 | 11:01:26
+ */
+
+public class ArmstrongNumbers {
+
+	public static void main(String[] args) {
+		
+		int num = 3;
+		
+		
+		
+	}
+	
+}

@@ -18,4 +18,14 @@ public class StringUtils {
 		}
 		return result;
 	}
+	
+	public static String reverseString(String s) {
+		String result = "";
+		
+		for (char c : s.toCharArray()) {
+			result = c + result;
+		}
+		
+		return result;
+	}
 }

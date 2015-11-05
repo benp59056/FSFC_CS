@@ -1,0 +1,24 @@
+package net.picklez.as.exercises;
+
+import java.util.Scanner;
+
+/**
+ * @author Ben Pickering
+ * @since 5 Nov 2015 | 11:39:49
+ */
+
+public class Anagram {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		try {
+			
+		} catch (InputMismatchException ime) {
+			
+		}
+		
+		scanner.close();
+	}
+	
+}

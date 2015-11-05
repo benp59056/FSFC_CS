@@ -1,0 +1,16 @@
+package net.picklez.as.exercises;
+
+/**
+ * @author Ben Pickering
+ * @since 5 Nov 2015 | 11:23:31
+ */
+
+public class Pallindrome {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		
+	}
+	
+}

@@ -1,0 +1,33 @@
+package net.picklez.as.exercises;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+/**
+ * @author Ben Pickering
+ * @since 5 Nov 2015 | 11:23:31
+ */
+
+public class Pallindrome {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		try {
+			
+		} catch (InputMismatchException ime) {
+			
+		} catch (NumberFormatException nfe) {
+			
+		}
+		
+		scanner.close();
+	}
+	
+	static String reverseString(String s) {
+		String result = "";
+		
+		return result;
+	}
+	
+}
