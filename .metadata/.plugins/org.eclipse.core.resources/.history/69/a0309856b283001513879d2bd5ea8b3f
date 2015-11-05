@@ -1,6 +1,5 @@
 package net.picklez.as.exercises;
 
-import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -13,15 +12,11 @@ public class Anagram {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		System.out.println("");
 		try {
-			System.out.println("Please input a word");
-			String firstWord = scanner.nextLine();
-
-			System.out.println("Please input a second word");
-			String secondWord = scanner.nextLine();
+			String input = scanner.nextLine();
 			
-			ArrayList<Character> wordOneChars = new ArrayList<Character>(); 
-			ArrayList<Character> wordTwoChars = new ArrayList<Character>();
+			
 			
 		} catch (InputMismatchException ime) {
 			System.out.println("Error");

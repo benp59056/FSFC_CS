@@ -1,6 +1,5 @@
 package net.picklez.as.exercises;
 
-import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -20,8 +19,7 @@ public class Anagram {
 			System.out.println("Please input a second word");
 			String secondWord = scanner.nextLine();
 			
-			ArrayList<Character> wordOneChars = new ArrayList<Character>(); 
-			ArrayList<Character> wordTwoChars = new ArrayList<Character>();
+			
 			
 		} catch (InputMismatchException ime) {
 			System.out.println("Error");

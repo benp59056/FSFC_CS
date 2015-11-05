@@ -22,7 +22,6 @@ public class Anagram {
 			
 			ArrayList<Character> wordOneChars = new ArrayList<Character>(); 
 			ArrayList<Character> wordTwoChars = new ArrayList<Character>();
-			
 		} catch (InputMismatchException ime) {
 			System.out.println("Error");
 		}
