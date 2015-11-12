@@ -1,0 +1,18 @@
+package net.picklez.as.exercises.arrays;
+
+import java.util.Scanner;
+
+/**
+ * @author Ben Pickering
+ * @since 12 Nov 2015 | 11:13:12
+ */
+
+public class IntegerArrays {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		scanner.close();
+	}
+	
+}

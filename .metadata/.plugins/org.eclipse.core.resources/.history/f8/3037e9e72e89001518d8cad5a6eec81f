@@ -1,0 +1,26 @@
+package net.picklez.utils;
+
+/**
+ * @author Ben Pickering
+ * @since 12 Nov 2015 | 11:16:55
+ */
+
+public class ArrayUtils {
+
+	private ArrayUtils() {
+		
+	}
+	
+
+	
+	public static String[] reverseArray(String[] array) {
+		String[] result = new String[array.length];
+		
+		for (int i = 0; i < array.length; i++) {
+			result[array.length - i - 1] = array[i];
+		}
+		
+		return result;
+	}
+	
+}

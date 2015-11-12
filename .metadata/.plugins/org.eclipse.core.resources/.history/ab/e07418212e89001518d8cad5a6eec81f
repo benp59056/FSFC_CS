@@ -1,0 +1,27 @@
+package net.picklez.as.exercises.arrays;
+
+import net.picklez.utils.StringUtils;
+import java.util.Scanner;
+/**
+ * @author Ben Pickering
+ * @since 12 Nov 2015 | 11:05:57
+ */
+
+public class ReversingArrays {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int length = 10;
+		String[] original = new String[length];
+		for (int i = 0; i < length; i++) {
+			
+		}
+		String[] reversed = StringUtils.reverseArray(original);
+		
+		for (String s : reversed) {
+			System.out.println(s);
+		}
+		scanner.close();
+	}
+	
+}

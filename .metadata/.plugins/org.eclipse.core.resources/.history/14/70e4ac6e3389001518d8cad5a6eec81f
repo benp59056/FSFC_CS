@@ -1,0 +1,10 @@
+package net.picklez.utils.exceptions;
+
+/**
+ * @author Ben Pickering
+ * @since 12 Nov 2015 | 11:49:25
+ */
+
+public class CustomException {
+
+}

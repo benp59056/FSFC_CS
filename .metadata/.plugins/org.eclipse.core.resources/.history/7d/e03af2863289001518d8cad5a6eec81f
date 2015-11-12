@@ -1,0 +1,31 @@
+package net.picklez.as.exercises.arrays;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+/**
+ * @author Ben Pickering
+ * @since 12 Nov 2015 | 11:40:41
+ */
+
+public class SearchingArrays {
+
+	public static void main(String[] args) {
+		/**
+		 * 1. Ask user for an index from 1 to 10 and display the number stored there
+		 * 2. Ask the user for a number and find the index where it is stored
+		 * 3. Improve part 2 so that a message is shown if the number does not exist
+		 */
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		try {
+			
+		} catch (InputMismatchException | NumberFormatException e) {
+			System.out.println("Your input could not be parsed:");
+		}
+		
+		scanner.close();
+	}
+	
+}
