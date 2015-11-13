@@ -3,10 +3,14 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
-<fullyQualifiedTypeName name="net.picklez.utils.StringUtils"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 <fullyQualifiedTypeName name="net.picklez.utils.MathUtils"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="net.picklez.utils.StringUtils"/>
+<fullyQualifiedTypeName name="net.picklez.utils.ArrayUtils"/>
+<fullyQualifiedTypeName name="java.awt.geom.Point2D"/>
+<fullyQualifiedTypeName name="net.picklez.utils.vectors.Vector2I"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+<fullyQualifiedTypeName name="net.picklez.utils.exceptions.CustomException"/>
 </qualifiedTypeNameHistroy>
