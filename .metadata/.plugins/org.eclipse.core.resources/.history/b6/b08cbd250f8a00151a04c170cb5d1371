@@ -1,0 +1,14 @@
+package net.picklez.as.exercises.arrays.twodimensions;
+
+/**
+ * @author Ben Pickering
+ * @since 13 Nov 2015 | 13:58:45
+ */
+
+public class ArraysForTesting {
+
+	public static void main(String[] args) {
+		int[][] array = new int[3][5];
+	}
+	
+}

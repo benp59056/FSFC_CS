@@ -122,4 +122,50 @@ public class ArrayUtils {
 		
 		return new Vector2I(localHighest, highestPosition);
 	}
+	
+	public static int getHighestValue(int[][] array) {
+		int result = 0;
+		
+		for (int i = 0; i < array.length; i++) {
+			for (int j = 0; j < array[i].length; j++) {
+				if (array[i][j] > result)
+					result = array[i][j];
+			}
+		}
+		
+		return result;
+	}
+	
+	public static int rowSum(int[][] array, int rowNum) {
+		int sum = 0;
+			
+		if (rowNum > array[0].length) 
+			return Integer.MIN_VALUE;
+		
+		for (int i = 0; i < array[rowNum].length; i++) {
+			sum += array[rowNum][i];
+		}
+		
+		return sum;
+	}
+	
+	public static int columnSum(int[][] array, int columnNum) {
+		int sum = 0;
+			
+		if (columnNum > array.length) 
+			return Integer.MIN_VALUE;
+		
+		for (int i = 0; i < array.length; i++) {
+			sum += array[i][columnNum];
+		}
+		
+		return sum;
+	}
+	
+	public static boolean isSequence(int[][] array) {
+		if (array[0].length == array.length)
+			return true;
+		
+		return false;
+	}
 }

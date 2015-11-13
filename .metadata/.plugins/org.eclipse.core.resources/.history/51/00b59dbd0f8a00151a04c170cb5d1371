@@ -1,0 +1,20 @@
+package net.picklez.as.exercises.arrays.twodimensions;
+
+/**
+ * @author Ben Pickering
+ * @since 13 Nov 2015 | 13:58:45
+ */
+
+public class ArraysForTesting {
+
+	public static void main(String[] args) {
+		int rows = 3;
+		int columns = 5;
+		int[][] array = new int[rows][columns];
+		int numberRows = array.length;
+		int numberColumns = array[0].length;
+		
+		System.out.println(numberRows + ", " + numberColumns);
+	}
+	
+}
