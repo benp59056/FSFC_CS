@@ -1,0 +1,17 @@
+package net.picklez.as.exercises.arrays.twodimensions;
+
+/**
+ * @author Ben Pickering
+ * @since 13 Nov 2015 | 13:26:52
+ */
+
+public class BowlingScores {
+
+	public static void main(String[] args) {
+		int[][] scores = new int[5][3];
+
+		System.out.println(scores.length); //5
+		System.out.println(scores[0].length); //3
+	}
+	
+}
