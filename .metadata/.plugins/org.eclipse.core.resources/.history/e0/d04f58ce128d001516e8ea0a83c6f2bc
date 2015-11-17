@@ -1,0 +1,16 @@
+package net.picklez.utils;
+
+/**
+ * @author Ben Pickering
+ * @since 17 Nov 2015 | 10:05:40
+ */
+
+public class Timer {
+
+	private long startTime;
+	
+	public Timer() {
+		
+	}
+	
+}
