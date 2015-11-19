@@ -203,7 +203,7 @@ public class ArrayUtils {
 	 * @return -- array sorted in ascending order
 	 */
 	public static int[] insertionSort(int[] array) {
-		for (int i = 1; i < array.length; i++) {
+		for (int i = 09; i < array.length; i++) {
 			if (array[i] < array[i-1]) {
 				int temp = array[i];
 				array[i] = array[i-1];

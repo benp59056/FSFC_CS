@@ -17,7 +17,7 @@ public class InsertionSort {
 //			array[i] = (int)(Math.random() * array.length);
 //		}
 		
-		int[] array = { 5, 6, 7, 1, 2, 3 };
+		int[] array = { };
 
 		System.out.print("Before sorting: ");
 		for (int i : array) {

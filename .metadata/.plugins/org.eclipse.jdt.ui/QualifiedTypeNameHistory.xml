@@ -13,4 +13,5 @@
 <fullyQualifiedTypeName name="net.picklez.utils.exceptions.CustomException"/>
 <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 <fullyQualifiedTypeName name="net.picklez.utils.ArrayUtils"/>
+<fullyQualifiedTypeName name="net.picklez.utils.Timer"/>
 </qualifiedTypeNameHistroy>
