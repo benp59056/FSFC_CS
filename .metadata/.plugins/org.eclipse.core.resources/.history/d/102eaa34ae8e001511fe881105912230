@@ -1,0 +1,10 @@
+package net.picklez.as.exercises.arrays.sorting;
+
+/**
+ * @author Ben Pickering
+ * @since 19 Nov 2015 | 11:10:28
+ */
+
+public class LinearSearch {
+
+}

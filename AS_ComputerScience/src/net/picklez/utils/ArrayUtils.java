@@ -203,21 +203,25 @@ public class ArrayUtils {
 	 * @return -- array sorted in ascending order
 	 */
 	public static int[] insertionSort(int[] array) {
-		for (int i = 1; i < array.length; i++) {
-			if (array[i] < array[i-1]) {
-				int temp = array[i];
-				array[i] = array[i-1];
-				array[i-1] = temp;
-				
-//				for (int j = i; j > 0; j++) {
-//					if (j - 1 > 0 && array[j] < array[j-1]) {
-//						int tempVal = array[j];
-//						array[j] = array[j-1];
-//						array[j-1] = tempVal;
-//					}
-//				}
+		int curPos = 0;
+		
+		for (curPos = 1; curPos < array.length; curPos++) {
+			while (curPos > 0 && array[curPos] < array[curPos-1]) {
+				int temp = array[curPos];
+				array[curPos] = array[curPos-1];
+				array[curPos-1] = temp;
+				curPos--;
 			}
 		}
+		
 		return array;
+	}
+	
+	public static boolean isNumInArray(int[] array, int num) {
+		for (int i : array) {
+			if (i == num)
+				return true;
+		}
+		return false;
 	}
 }
