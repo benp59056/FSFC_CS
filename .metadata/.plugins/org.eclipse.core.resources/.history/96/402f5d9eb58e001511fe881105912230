@@ -24,8 +24,6 @@ public class WhileLoops {
 				System.out.println(StringUtils.formatString("{0} is not a valid age.", age));
 			}
 		}
-		
-		scanner.close();
 	}
 	
 }

@@ -21,7 +21,6 @@ public class Primes {
 
 			num = input.nextInt();
 			System.out.println(StringUtils.formatString("Is {0} a prime? {1}", num, MathUtils.isPrime(num)));
-			input.close();
 		}catch (java.util.InputMismatchException ime) {
 			System.out.println("Could not use input");
 		}

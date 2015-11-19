@@ -23,7 +23,6 @@ public class IQs {
 		} catch (java.util.InputMismatchException e) {
 			System.out.println("Incorrect iput. Closing");
 		}
-		scanner.close();
 	}
 	
 }

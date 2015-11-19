@@ -17,7 +17,6 @@ public class TestResults {
 		float percentage = scanner.nextFloat();
 		
 		System.out.println(StringUtils.formatString("Grade received from {0}%: {1}", percentage, getGradeFromPercentage(percentage)));
-		scanner.close();
 	}
 	
 	public static char getGradeFromPercentage(float p) {
