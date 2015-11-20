@@ -11,7 +11,7 @@ import net.picklez.utils.Timer;
 public class LinearAgainstBinary {
 
 	public static void main(String[] args) {
-		int[] array = new int[1000];
+		int[] array = new int[100000];
 		
 		int searchNum = 1200;
 		
@@ -33,8 +33,9 @@ public class LinearAgainstBinary {
 		
 		Timer binaryTimer = new Timer();
 		binaryTimer.setStartTime();
-		
+		ArrayUtils.binarySearch(array, searchNum);
 		binaryTimer.setEndTime();
+		System.out.println("Binary: " + binaryTimer.getTimeElapsed());
 	}
 	
 }

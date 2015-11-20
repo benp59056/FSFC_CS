@@ -1,0 +1,63 @@
+package net.picklez.utils.queues;
+
+/**
+ * @author Ben Pickering
+ * @since 20 Nov 2015 | 13:11:31
+ */
+
+public class Queue {
+
+	private int maxSize = 5;
+	private Object[] objects;
+
+	public Queue(Object obj) {
+		this.objects = new Object[] { obj };
+	}
+
+	public Queue() {
+		this.objects = new Object[5];
+	}
+
+	public void addItem(Object o) {
+		if (this.objects.length < maxSize) {
+			this.objects[this.objects.length] = 0;
+		} else {
+			boolean done = false;
+			if (!done)
+				System.out.println("Failed to add object: Array is at maximum size");
+		}
+	}
+	
+	public void removeFirst() {
+		this.objects[0] = null;
+		this.removeEmptySlots();
+	}
+	
+	public int getSize() {
+		return this.objects.length;
+	}
+	
+	public boolean isEmpty() {
+		return this.objects.length == 0;
+	}
+	
+	public boolean isFull() {
+		return this.objects.length == this.maxSize;
+	}
+	
+	public void removeEmptySlots() {
+		for (int i = 0; i < this.objects.length - 1; i++) {
+			if (this.objects[i] == null) {
+				this.objects[i] = this.objects[i+1];
+			}
+		}
+	}
+	
+	public void printQueue() {
+		int objsDone = 0;
+		for (Object o : this.objects) {
+			System.out.println((objsDone > 0 ? ", " : " ") + o.toString());
+			objsDone++;
+		}
+	}
+}
