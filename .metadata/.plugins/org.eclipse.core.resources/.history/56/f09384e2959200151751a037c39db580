@@ -32,7 +32,7 @@ public class Queue {
 	}
 
 	public boolean isEmpty() {
-		return this.queueArray.isEmpty();
+		return this.queueArray.size() == 0;
 	}
 
 	public void printQueue() {
