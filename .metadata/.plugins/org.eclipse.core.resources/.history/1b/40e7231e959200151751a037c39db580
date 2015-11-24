@@ -1,0 +1,14 @@
+package net.picklez.as.exercises.arrays.queues;
+
+/**
+ * @author Ben Pickering
+ * @since 24 Nov 2015 | 10:21:02
+ */
+
+public class QueueExample {
+
+	public static void main(String[] args) {
+		Queue que = new Queue();
+	}
+	
+}

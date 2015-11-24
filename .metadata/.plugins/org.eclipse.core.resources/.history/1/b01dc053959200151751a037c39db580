@@ -7,7 +7,7 @@ import net.picklez.utils.SystemUtils;
 /**
  * @author Ben Pickering
  * @since 24 Nov 2015 | 09:49:02
- * @description - Last in; first out
+ * @description - First in; first out
  */
 public class Stack {
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;AS_ComputerScience&apos;&#x0D;&#x0A;- Original project: &apos;AS_ComputerScience&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     net.picklez.as.exercises.arrays.queues.ArrayQueue.java&#x0D;&#x0A;     net.picklez.as.exercises.arrays.queues.QueueObject.java&#x0D;&#x0A;     net.picklez.utils.queues.Queue.java" description="Delete elements" element1="/src&lt;net.picklez.as.exercises.arrays.queues{QueueObject.java" element2="/src&lt;net.picklez.utils.queues{Queue.java" element3="/src&lt;net.picklez.as.exercises.arrays.queues{ArrayQueue.java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1448360306960" subPackages="false" version="1.0"/>
+</session>

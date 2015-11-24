@@ -42,7 +42,7 @@ public class Queue {
 				System.out.print(o + " ");
 			}
 		} else {
-			System.out.print("{Empty queue} ");
+			System.out.print("{Empty queue}");
 		}
 		System.out.print("}\n");
 	}

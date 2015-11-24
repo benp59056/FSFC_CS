@@ -6,10 +6,10 @@ import net.picklez.utils.SystemUtils;
 
 /**
  * @author Ben Pickering
- * @since 24 Nov 2015 | 09:49:02
- * @description - Last in; first out
+ * @since 24 Nov 2015 | 10:18:34
  */
-public class Stack {
+
+public class Queue {
 
 	private LinkedList<Object> stackArray;
 
@@ -50,4 +50,5 @@ public class Stack {
 		System.out.println("Popping full stack");
 		this.stackArray.clear();
 	}
+	
 }

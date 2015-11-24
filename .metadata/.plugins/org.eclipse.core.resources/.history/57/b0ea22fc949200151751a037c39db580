@@ -6,22 +6,22 @@ import net.picklez.utils.SystemUtils;
 
 /**
  * @author Ben Pickering
- * @since 24 Nov 2015 | 09:49:02
- * @description - Last in; first out
+ * @since 24 Nov 2015 | 10:18:34
  */
-public class Stack {
+
+public class Queue {
 
 	private LinkedList<Object> stackArray;
 
-	public Stack() {
+	public Queue() {
 		this.stackArray = new LinkedList<Object>();
 	}
 
-	public void pushItem(Object o) {
-		this.stackArray.addFirst(o);
+	public void addItem(Object o) {
+		this.stackArray.addLast(o);
 	}
 
-	public void popItem() {
+	public void removeItem() {
 		SystemUtils.printWithTime("Removed: " + this.stackArray.getFirst());
 		this.stackArray.removeFirst();
 	}
@@ -34,14 +34,14 @@ public class Stack {
 		return this.stackArray.size() == 0;
 	}
 
-	public void printStack() {
-		System.out.print("Stack {\n");
+	public void printQueue() {
+		System.out.print("Queue { ");
 		if (this.stackArray.size() > 0) {
 			for (Object o : this.stackArray) {
-				System.out.print("\t" + o + "\n");
+				System.out.print(o + " ");
 			}
 		} else {
-			System.out.print("\t " + "{Empty stack}" + "\n");
+			System.out.print("{Empty queue}");
 		}
 		System.out.print("}\n");
 	}
@@ -50,4 +50,5 @@ public class Stack {
 		System.out.println("Popping full stack");
 		this.stackArray.clear();
 	}
+	
 }

@@ -7,7 +7,7 @@ import net.picklez.utils.SystemUtils;
 /**
  * @author Ben Pickering
  * @since 24 Nov 2015 | 10:18:34
- * @description - First in; first out
+ * @description - First in, first out
  */
 
 public class Queue {
@@ -42,7 +42,7 @@ public class Queue {
 				System.out.print(o + " ");
 			}
 		} else {
-			System.out.print("{Empty queue} ");
+			System.out.print("{Empty queue}");
 		}
 		System.out.print("}\n");
 	}
