@@ -1,0 +1,14 @@
+package net.picklez.utils;
+
+/**
+ * @author Ben Pickering
+ * @since 20 Nov 2015 | 14:10:06
+ */
+
+public class FileUtils {
+
+	private FileUtils() {
+		
+	}
+	
+}

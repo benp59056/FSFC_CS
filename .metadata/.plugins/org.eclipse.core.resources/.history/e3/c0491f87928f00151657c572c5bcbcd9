@@ -1,0 +1,16 @@
+package net.picklez;
+
+import javax.swing.JFrame;
+
+/**
+ * @author Ben Pickering
+ * @since 20 Nov 2015 | 14:24:39
+ */
+
+public class Frame {
+
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("");
+	}
+	
+}

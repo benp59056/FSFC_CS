@@ -1,0 +1,16 @@
+package net.picklez.utils;
+
+/**
+ * @author Ben Pickering
+ * @since 20 Nov 2015 | 14:19:29
+ */
+
+public class ThreadedTimer implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

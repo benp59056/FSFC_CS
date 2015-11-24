@@ -1,0 +1,16 @@
+package net.picklez.testing;
+
+import java.io.PrintStream;
+
+/**
+ * @author Ben Pickering
+ * @since 20 Nov 2015 | 14:23:03
+ */
+
+public class OutputTesting {
+
+	public static void main(String[] args) {
+		System.setErr(new PrintStream());
+	}
+	
+}

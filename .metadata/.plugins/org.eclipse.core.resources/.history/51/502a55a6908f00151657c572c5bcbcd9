@@ -1,0 +1,25 @@
+package net.picklez.utils;
+
+import java.io.FileReader;
+import java.io.InputStreamReader;
+
+/**
+ * @author Ben Pickering
+ * @since 20 Nov 2015 | 14:10:06
+ */
+
+public class FileUtils {
+
+	private FileUtils() {
+		
+	}
+	
+	public static String readFileAsString(String filePath) {
+		String contents = "";
+		
+		InputStreamReader isr = new InputStreamReader(new FileReader(filePath));
+		
+		return contents;
+	}
+	
+}
