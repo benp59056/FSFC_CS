@@ -1,0 +1,24 @@
+package net.picklez.utils.queues;
+
+import java.util.LinkedList;
+
+/**
+ * @author Ben Pickering
+ * @since 24 Nov 2015 | 09:49:02
+ * @description - First in; first out
+ */
+public class Stack {
+
+	private LinkedList<Object> stackArray;
+	private int top;
+	
+	public Stack() {
+		this.stackArray = new LinkedList<Object>();
+		this.top = -1;
+	}
+	
+	private void pushItem(Object o) {
+		
+	}
+	
+}
