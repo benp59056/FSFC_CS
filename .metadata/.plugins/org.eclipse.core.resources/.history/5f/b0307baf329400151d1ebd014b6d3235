@@ -16,7 +16,7 @@ public class LalinLinkedListController {
 		list.insertFirst("Smee", 100, "Cheeky Girls", true);
 		list.displayList();
 		System.out.println("--- Inserting ---");
-		list.insertBefore(wendy, new LalinLink("Insert before", 10, "Insert before", true));
+		list.insertBefore(wendy, new LalinLink("Insert after", 10, "Insert after", true));
 		list.displayList();
 	}
 	
