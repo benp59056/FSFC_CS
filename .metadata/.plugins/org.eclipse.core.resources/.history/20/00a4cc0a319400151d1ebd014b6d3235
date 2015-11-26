@@ -45,7 +45,6 @@ public class LalinLinkedList {
 			if (current.equals(first)) {
 				current.insertAfter(last);
 				current = null;
-				break;
 			}
 			current = current.getNextLink();
 		}

@@ -18,10 +18,7 @@ public class LalinLinkedList {
 	}
 	
 	public void insertFirst(LalinLink link) {
-		if (this.first != null)
-			link.setNextLink(this.first);
 		
-		this.first = link;
 	}
 	
 	public void insertFirst(String name, int age, String favBand, boolean inRelationship) {
@@ -45,7 +42,6 @@ public class LalinLinkedList {
 			if (current.equals(first)) {
 				current.insertAfter(last);
 				current = null;
-				break;
 			}
 			current = current.getNextLink();
 		}

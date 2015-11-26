@@ -34,7 +34,6 @@ public class LalinLink {
 	
 	public void insertAfter(LalinLink link) {
 		link.setNextLink(nextLink);
-		this.setNextLink(link);
 	}
 	
 	public void setName(String s) {

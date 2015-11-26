@@ -39,6 +39,16 @@ public class LalinLinkedList {
 		return toDelete;
 	}
 	
+	public void displayList() {
+		System.out.print("List (first-> last): ");
+		LalinLink current = first;
+		while (current != null) {
+			current.displayLink();
+			current = current.getNextLink();
+		}
+		System.out.println(" ");
+	}
+
 	public void insertAfter(LalinLink first, LalinLink last) {
 		LalinLink current = first;
 		while (current != null) {
@@ -51,13 +61,4 @@ public class LalinLinkedList {
 		}
 	}
 	
-	public void displayList() {
-		System.out.print("List (first-> last): ");
-		LalinLink current = first;
-		while (current != null) {
-			current.displayLink();
-			current = current.getNextLink();
-		}
-		System.out.println(" ");
-	}
 }
