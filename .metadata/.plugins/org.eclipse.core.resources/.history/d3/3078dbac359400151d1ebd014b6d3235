@@ -1,7 +1,5 @@
 package net.picklez.as.exercises.linkedlists;
 
-import net.picklez.utils.StringUtils;
-
 /**
  * @author Ben Pickering
  * @since 26 Nov 2015 | 11:09:18
@@ -15,21 +13,12 @@ public class LalinLink {
 	private boolean inARelationship = false;
 	
 	private LalinLink nextLink = null;
-	private LalinLink previousLink = null;
 	
 	public LalinLink(String name, int age, String faveBand, boolean relationship) {
 		this.name = name;
 		this.age = age;
 		this.favBand = faveBand;
 		this.inARelationship = relationship;
-	}
-	
-	public LalinLink(String name, int age, String faveBand, boolean relationship, LalinLink prev) {
-		this.name = name;
-		this.age = age;
-		this.favBand = faveBand;
-		this.inARelationship = relationship;
-		this.previousLink = prev;
 	}
 	
 	public void displayLink() {
@@ -66,10 +55,6 @@ public class LalinLink {
 		this.nextLink = link;
 	}
 	
-	public void setPrevLink(LalinLink link) {
-		this.previousLink = link;
-	}
-	
 	public String getName() {
 		return this.name;
 	}
@@ -94,12 +79,9 @@ public class LalinLink {
 		return this.nextLink != null;
 	}
 	
-	public LalinLink getPreviousLink() {
-		return this.previousLink;
-	}
-	
-	public String asString() {
-		String result = StringUtils.formatString("LalinLink[Name='{0}', Age='{1}', Band='{2}', Relationship='{3}']", this.name, this.age, this.favBand, this.inARelationship);
+	@Override
+	public String toString() {
+		String result = "";
 		return result;
 	}
 }

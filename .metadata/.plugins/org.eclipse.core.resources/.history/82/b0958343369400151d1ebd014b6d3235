@@ -75,12 +75,12 @@ public class LalinLinkedList {
 		System.out.println(" ");
 	}
 
-	public boolean remove(LalinLink link) {
-		LalinLink current = first;
+	public boolean remove(LalinLink wendy) {
 		while (current != null) {
-			if (current.getNextLink().equals(link)) {
-				current.setNextLink(link.getNextLink());
-				return true;
+			if (current.equals(first)) {
+				current.insertAfter(last);
+				current = null;
+				break;
 			}
 			current = current.getNextLink();
 		}

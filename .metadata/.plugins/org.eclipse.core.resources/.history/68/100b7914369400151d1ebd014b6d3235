@@ -24,12 +24,11 @@ public class LalinLink {
 		this.inARelationship = relationship;
 	}
 	
-	public LalinLink(String name, int age, String faveBand, boolean relationship, LalinLink prev) {
+	public LalinLink(String name, int age, String faveBand, boolean relationship) {
 		this.name = name;
 		this.age = age;
 		this.favBand = faveBand;
 		this.inARelationship = relationship;
-		this.previousLink = prev;
 	}
 	
 	public void displayLink() {
@@ -66,10 +65,6 @@ public class LalinLink {
 		this.nextLink = link;
 	}
 	
-	public void setPrevLink(LalinLink link) {
-		this.previousLink = link;
-	}
-	
 	public String getName() {
 		return this.name;
 	}
@@ -92,10 +87,6 @@ public class LalinLink {
 
 	public boolean hasNextLink() {
 		return this.nextLink != null;
-	}
-	
-	public LalinLink getPreviousLink() {
-		return this.previousLink;
 	}
 	
 	public String asString() {

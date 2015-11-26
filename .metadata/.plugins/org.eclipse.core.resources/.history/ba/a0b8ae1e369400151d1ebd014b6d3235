@@ -67,7 +67,7 @@ public class LalinLink {
 	}
 	
 	public void setPrevLink(LalinLink link) {
-		this.previousLink = link;
+		this.previousLink - linkl
 	}
 	
 	public String getName() {
@@ -92,10 +92,6 @@ public class LalinLink {
 
 	public boolean hasNextLink() {
 		return this.nextLink != null;
-	}
-	
-	public LalinLink getPreviousLink() {
-		return this.previousLink;
 	}
 	
 	public String asString() {

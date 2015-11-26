@@ -28,9 +28,7 @@ public class LalinLinkedListController {
 		System.out.println("Deleted first");
 		list.displayList();
 		
-		System.out.println("Found: " + list.findLink(wendy).asString());
-		System.out.println("Deleted wendy resulted: " + list.remove(wendy));
-		list.displayList();
+		System.out.println("//" + list.findLink(wendy));
 	}
 	
 }
