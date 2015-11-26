@@ -1,0 +1,16 @@
+package net.picklez.as.exercises.linkedlists;
+
+/**
+ * @author Ben Pickering
+ * @since 26 Nov 2015 | 11:12:48
+ */
+
+public class LalinLinkedList {
+
+	private LalinLink first;
+	
+	public LalinLinkedList() {
+		this.first = null;
+	}
+	
+}

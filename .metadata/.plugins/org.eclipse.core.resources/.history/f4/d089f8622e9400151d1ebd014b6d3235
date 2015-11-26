@@ -1,0 +1,24 @@
+package net.picklez.as.exercises.linkedlists;
+
+/**
+ * @author Ben Pickering
+ * @since 26 Nov 2015 | 11:09:18
+ */
+
+public class LalinLink {
+
+	private String name;
+	private int age;
+	private String favBand = "Spice Girls";
+	private boolean inARelationship = false;
+	
+	private LalinLink nextLink = null;
+	
+	public LalinLink(String name, int age, String faveBand, boolean relationship) {
+		this.name = name;
+		this.age = age;
+		this.favBand = faveBand;
+		this.inARelationship = relationship;
+	}
+	
+}
