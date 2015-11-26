@@ -39,6 +39,10 @@ public class LalinLinkedList {
 		return toDelete;
 	}
 	
+	public LalinLink deleteLast() {
+		
+	}
+	
 	/**
 	 * @param first -- the original link in list
 	 * @param last -- the new link to be added to list

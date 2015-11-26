@@ -76,8 +76,4 @@ public class LalinLink {
 	public LalinLink getNextLink() {
 		return this.nextLink;
 	}
-
-	public boolean hasNextLink() {
-		return this.nextLink != null;
-	}
 }

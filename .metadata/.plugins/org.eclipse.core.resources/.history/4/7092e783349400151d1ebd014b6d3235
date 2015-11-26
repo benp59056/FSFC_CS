@@ -12,6 +12,8 @@ public class LalinLink {
 	private String favBand = "Spice Girls";
 	private boolean inARelationship = false;
 	
+	private long objID;
+	
 	private LalinLink nextLink = null;
 	
 	public LalinLink(String name, int age, String faveBand, boolean relationship) {
@@ -19,6 +21,8 @@ public class LalinLink {
 		this.age = age;
 		this.favBand = faveBand;
 		this.inARelationship = relationship;
+		
+		this.objID = (long)(Math.random() * Integer.MAX_VALUE);
 	}
 	
 	public void displayLink() {
@@ -28,6 +32,7 @@ public class LalinLink {
 		System.out.println("Age: " + this.getAge());
 		System.out.println("Band: " + this.getFavBand());
 		System.out.println("Relationship: " + this.getInRelationship());
+		System.out.println("ID: " + this.getRandomID());
 		System.out.println(" ");
 		System.out.println("********");
 	}
@@ -79,5 +84,9 @@ public class LalinLink {
 
 	public boolean hasNextLink() {
 		return this.nextLink != null;
+	}
+	
+	public long getRandomID() {
+		return this.objID;
 	}
 }

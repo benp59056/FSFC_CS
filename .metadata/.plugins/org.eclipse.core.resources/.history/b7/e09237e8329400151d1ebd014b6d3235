@@ -43,7 +43,7 @@ public class LalinLinkedList {
 	 * @param first -- the original link in list
 	 * @param last -- the new link to be added to list
 	 */
-	public void insertAfter(LalinLink first, LalinLink last) {
+	public void insertBefore(LalinLink first, LalinLink last) {
 		LalinLink current = first;
 		while (current != null) {
 			if (current.equals(first)) {
@@ -54,6 +54,16 @@ public class LalinLinkedList {
 			current = current.getNextLink();
 		}
 	}
+	
+	/**
+	 * @param first -- the original link in list
+	 * @param last -- the new link to be added to list
+	 */
+	public void insertAfter(LalinLink first, LalinLink last) {
+		LalinLink current = first;
+		
+	}
+	
 	public void displayList() {
 		System.out.print("List (first-> last): ");
 		LalinLink current = first;

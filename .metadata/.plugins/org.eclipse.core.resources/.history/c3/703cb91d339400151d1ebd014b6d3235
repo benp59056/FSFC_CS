@@ -32,7 +32,7 @@ public class LalinLink {
 		System.out.println("********");
 	}
 	
-	public void insertAfter(LalinLink link) {
+	public void insertBefore(LalinLink link) {
 		link.setNextLink(nextLink);
 		this.setNextLink(link);
 	}
@@ -75,9 +75,5 @@ public class LalinLink {
 	
 	public LalinLink getNextLink() {
 		return this.nextLink;
-	}
-
-	public boolean hasNextLink() {
-		return this.nextLink != null;
 	}
 }

@@ -19,7 +19,6 @@ public class LalinLinkedListController {
 		list.insertAfter(wendy, new LalinLink("Insert after", 10, "Insert after", true));
 		list.displayList();
 		list.deleteFirst();
-		System.out.println("Deleted first");
 		list.displayList();
 	}
 	
