@@ -1,0 +1,18 @@
+package net.picklez.as.exercises.linkedlists.examples;
+
+/**
+ * @author Ben Pickering
+ * @since 27 Nov 2015 | 13:54:04
+ */
+
+public class Searching {
+
+	/**
+	 * 'Write a program to search for an item in a linked list and
+	 * display a message if found' 
+	 */
+	public static void main(String[] args) {
+		LinkedList<Object> list = new LinkedList<Object>();
+	}
+	
+}

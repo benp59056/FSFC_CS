@@ -29,7 +29,6 @@ public class ShoppingCart {
 }
 
 class ShoppingItem {
-	
 	private double price;
 	private int quant;
 	private String desc;
@@ -50,10 +49,6 @@ class ShoppingItem {
 	
 	public void setDescription(String s) {
 		this.desc = s;
-	}
-	
-	public double getOverallPrice() {
-		return this.price * this.quant;
 	}
 	
 	public double getPrice() {

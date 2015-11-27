@@ -52,10 +52,6 @@ class ShoppingItem {
 		this.desc = s;
 	}
 	
-	public double getOverallPrice() {
-		return this.price * this.quant;
-	}
-	
 	public double getPrice() {
 		return this.price;
 	}
