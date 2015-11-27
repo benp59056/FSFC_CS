@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="net.picklez.utils.MathUtils"/>
-<fullyQualifiedTypeName name="net.picklez.utils.StringUtils"/>
 <fullyQualifiedTypeName name="java.awt.geom.Point2D"/>
 <fullyQualifiedTypeName name="net.picklez.utils.vectors.Vector2I"/>
 <fullyQualifiedTypeName name="net.picklez.utils.exceptions.CustomException"/>
@@ -24,4 +23,5 @@
 <fullyQualifiedTypeName name="net.picklez.utils.queues.Stack"/>
 <fullyQualifiedTypeName name="net.picklez.utils.SystemUtils"/>
 <fullyQualifiedTypeName name="net.picklez.utils.queues.Queue"/>
+<fullyQualifiedTypeName name="net.picklez.utils.StringUtils"/>
 </qualifiedTypeNameHistroy>

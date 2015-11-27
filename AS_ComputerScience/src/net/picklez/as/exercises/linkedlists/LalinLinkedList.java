@@ -66,7 +66,7 @@ public class LalinLinkedList {
 	}
 	
 	public void displayList() {
-		System.out.print("List (first-> last): ");
+		System.out.println("List (first-> last): ");
 		LalinLink current = first;
 		while (current != null) {
 			current.displayLink();

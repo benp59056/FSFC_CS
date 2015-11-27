@@ -15,18 +15,26 @@ public class LalinLinkedListController {
 		list.insertFirst("Cap'n Hook", 50, "Cheeky Girls", true);
 		list.insertFirst("Smee", 100, "Cheeky Girls", true);
 		list.displayList();
+		
 		for (int i = 0; i < 5; i++) {
 			System.out.println("*");
 		}
+		
 		System.out.println("--- Inserting after wendy ---");
 		list.insertAfter(wendy, new LalinLink("Insert after", 10, "Insert after", true));
 		list.displayList();
+		
 		for (int i = 0; i < 5; i++) {
 			System.out.println("*");
 		}
+		
 		list.deleteFirst();
 		System.out.println("Deleted first");
 		list.displayList();
+		
+		for (int i = 0; i < 5; i++) {
+			System.out.println("*");
+		}
 		
 		System.out.println("Found: " + list.findLink(wendy).asString());
 		System.out.println("Deleted wendy resulted: " + list.remove(wendy));

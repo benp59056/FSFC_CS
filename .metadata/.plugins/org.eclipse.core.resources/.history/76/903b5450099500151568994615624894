@@ -1,0 +1,63 @@
+package net.picklez.utils.collections;
+
+import net.picklez.as.exercises.linkedlists.PLink;
+import net.picklez.utils.StringUtils;
+
+/**
+ * @author Ben Pickering
+ * @since 27 Nov 2015 | 13:16:46
+ */
+
+public class PLink {
+
+	private PLink nextLink = null;
+	private PLink previousLink = null;
+	
+	public PLink(String name, int age, String faveBand, boolean relationship) {
+		this.name = name;
+		this.age = age;
+		this.favBand = faveBand;
+		this.inARelationship = relationship;
+	}
+	
+	public PLink(Object o, PLink prev) {
+		this.previousLink = prev;
+	}
+	
+	public void displayLink() {
+		System.out.println("********");
+		System.out.println(this.asString());
+		System.out.println("********");
+	}
+	
+	public void insertAfter(PLink link) {
+		link.setNextLink(nextLink);
+		this.setNextLink(link);
+	}
+	
+	public void setNextLink(PLink link) {
+		this.nextLink = link;
+	}
+	
+	public void setPrevLink(PLink link) {
+		this.previousLink = link;
+	}
+	
+	public PLink getNextLink() {
+		return this.nextLink;
+	}
+
+	public boolean hasNextLink() {
+		return this.nextLink != null;
+	}
+	
+	public PLink getPreviousLink() {
+		return this.previousLink;
+	}
+	
+	public String asString() {
+		String result = StringUtils.formatString("PLink[Name='{0}', Age='{1}', Band='{2}', Relationship='{3}']", this.name, this.age, this.favBand, this.inARelationship);
+		return result;
+	}
+	
+}

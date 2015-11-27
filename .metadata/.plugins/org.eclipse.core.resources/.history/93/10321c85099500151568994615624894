@@ -1,0 +1,22 @@
+package net.picklez.as.exercises.linkedlists.stack;
+
+import net.picklez.as.exercises.linkedlists.LalinLinkedList;
+
+/**
+ * @author Ben Pickering
+ * @since 27 Nov 2015 | 13:12:27
+ */
+
+public class LinkedListStack {
+
+	PLinkedList list;
+	
+	public LinkedListStack() {
+		this.list = new LalinLinkedList();
+	}
+	
+	
+	public void addItemToStack() {
+		
+	}
+}
