@@ -19,9 +19,10 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.text.DateFormat"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="net.picklez.utils.queues.Stack"/>
 <fullyQualifiedTypeName name="net.picklez.utils.SystemUtils"/>
 <fullyQualifiedTypeName name="net.picklez.utils.queues.Queue"/>
+<fullyQualifiedTypeName name="net.picklez.utils.collections.PLinkedList"/>
 <fullyQualifiedTypeName name="net.picklez.utils.StringUtils"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
 </qualifiedTypeNameHistroy>

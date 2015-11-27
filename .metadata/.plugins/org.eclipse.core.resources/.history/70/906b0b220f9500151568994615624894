@@ -16,18 +16,19 @@ public class Searching {
 	public static void main(String[] args) {
 		LinkedList<Object> list = new LinkedList<Object>();
 		list.add("Bored");
-		list.add(1);
+		list.add("in");
 		list.add("lesson");
-		System.out.println(find(list, 1));
+		System.out.println(find(list, "in"));
 		System.out.println(find(list, "out"));
 	}
-
+	
 	private static String find(LinkedList<Object> list, Object o) {
 		for (Object obj : list) {
-			if (obj.equals(o))
+			if (obj.equals(o)) {
 				return "Found query";
+			}
 		}
 		return "Didn't find query";
 	}
-
+	
 }

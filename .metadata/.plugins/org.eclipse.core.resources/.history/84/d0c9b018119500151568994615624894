@@ -21,10 +21,11 @@ public class ShoppingCart {
 		basket.add(new ShoppingItem(5.99, 6, "Limited edition ting"));
 		basket.add(new ShoppingItem(3.00, 1, "£3 zoot"));
 		
-		for (ShoppingItem item : basket) {
-			System.out.println(item.asString());
+		for (ShoppingItem i : basket) {
+			System.out.println(i.asString());
 		}
 	}
+	
 }
 
 class ShoppingItem {

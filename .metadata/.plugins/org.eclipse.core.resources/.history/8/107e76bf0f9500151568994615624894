@@ -24,8 +24,9 @@ public class Searching {
 
 	private static String find(LinkedList<Object> list, Object o) {
 		for (Object obj : list) {
-			if (obj.equals(o))
+			if (obj.equals(o)) {
 				return "Found query";
+			}
 		}
 		return "Didn't find query";
 	}
