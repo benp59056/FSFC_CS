@@ -1,0 +1,10 @@
+package net.picklez.as.exercises.addressbook;
+
+/**
+ * @author Ben Pickering
+ * @since 1 Dec 2015 | 10:16:16
+ */
+
+public class AddressBook {
+
+}

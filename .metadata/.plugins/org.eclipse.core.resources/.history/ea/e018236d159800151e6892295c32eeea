@@ -1,0 +1,12 @@
+package net.picklez.as.exercises.addressbook;
+
+/**
+ * @author Ben Pickering
+ * @since 1 Dec 2015 | 10:22:09
+ */
+
+public class Book {
+
+	ArrayList<String> lines;
+	
+}
