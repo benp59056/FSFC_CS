@@ -5,6 +5,7 @@ import net.picklez.utils.vectors.Vector2I;
 /**
  * @author Ben Pickering
  * @since 12 Nov 2015 | 11:16:55
+ * Class holding utility methods for arrays
  */
 
 public class ArrayUtils {
@@ -31,6 +32,11 @@ public class ArrayUtils {
 		return result;
 	}
 
+	/**
+	 * Reverses an integer array
+	 * @param array - original array
+	 * @return - integer array in reverse
+	 */
 	public static int[] reverseArray(int[] array) {
 		int[] result = new int[array.length];
 
@@ -41,6 +47,12 @@ public class ArrayUtils {
 		return result;
 	}
 
+	/**
+	 * A method to push values of an integer array x places 
+	 * @param array - original array
+	 * @param places - number of places to push data
+	 * @return - new array with data pushed x places
+	 */
 	public static int[] pushData(int[] array, int places) {
 		int[] result = new int[array.length+places];
 
@@ -55,6 +67,11 @@ public class ArrayUtils {
 		return result;
 	}
 
+	/**
+	 * A somewhat-easy to understand method of sorting an integer array
+	 * @param array - original array
+	 * @return - new array in ascending order
+	 */
 	public static int[] sortAscendingValue(int[] array) {
 		int[] localArray = array;
 		int[] result = new int[array.length];
@@ -68,6 +85,11 @@ public class ArrayUtils {
 		return result;
 	}
 
+	/**
+	 * A somewhat-easy to understand method of sorting an integer array
+	 * @param array - original array
+	 * @return - new array in descending order
+	 */
 	public static int[] sortDescendingValue(int[] array) {
 		int[] localArray = array;
 		int[] result = new int[array.length];
@@ -81,6 +103,11 @@ public class ArrayUtils {
 		return result;
 	}
 
+	/**
+	 * Method to find highest value in an integer array
+	 * @param array
+	 * @return - the highest value of the array
+	 */
 	public static int getHighestValue(int[] array) {
 		int localHighest = Integer.MIN_VALUE;
 
@@ -91,7 +118,12 @@ public class ArrayUtils {
 
 		return localHighest;
 	}
-
+	
+	/**
+	 * Method to find lowest value in an integer array
+	 * @param array
+	 * @return - the lowest value of the array
+	 */
 	public static int getLowestValue(int[] array) {
 		int localLowest = Integer.MAX_VALUE;
 
@@ -104,6 +136,7 @@ public class ArrayUtils {
 	}
 
 	/**
+	 * Method to find the lowest value and its index in the array
 	 * @param array
 	 * @return - returns net.picklez.utils.vectors.Vector2I with:
 	 * x = lowest value, y = position in array
@@ -123,6 +156,7 @@ public class ArrayUtils {
 	}
 
 	/**
+	 * Method to find the highest value and its index in the array
 	 * @param array
 	 * @return - returns net.picklez.utils.vectors.Vector2I with:
 	 * x = highest value, y = position in array
@@ -141,6 +175,11 @@ public class ArrayUtils {
 		return new Vector2I(localHighest, highestPosition);
 	}
 
+	/**
+	 * Finds the highest value in a 2d integer array
+	 * @param array
+	 * @return - the highest value found
+	 */
 	public static int getHighestValue(int[][] array) {
 		int result = 0;
 
@@ -154,6 +193,12 @@ public class ArrayUtils {
 		return result;
 	}
 
+	/**
+	 * Method to show the sum of given row in 2d integer array
+	 * @param array
+	 * @param rowNum - row index
+	 * @return - the sum of the row stated in given array
+	 */
 	public static int rowSum(int[][] array, int rowNum) {
 		int sum = 0;
 
@@ -167,6 +212,12 @@ public class ArrayUtils {
 		return sum;
 	}
 
+	/**
+	 * Method to show the sum of given column in 2d integer array
+	 * @param array
+	 * @param columnNum - column index
+	 * @return - the sum of the column stated in given array
+	 */
 	public static int columnSum(int[][] array, int columnNum) {
 		int sum = 0;
 
@@ -180,6 +231,11 @@ public class ArrayUtils {
 		return sum;
 	}
 
+	/**
+	 * Checks if a 2d integer array is of sequence (2*2, 3*3, etc...)
+	 * @param array
+	 * @return
+	 */
 	public static boolean isSequence(int[][] array) {
 		if (array[0].length == array.length)
 			return true;
@@ -235,6 +291,12 @@ public class ArrayUtils {
 		return array;
 	}
 
+	/**
+	 * Checks if a number is in an integer array
+	 * @param array
+	 * @param num - number to find
+	 * @return true if found
+	 */
 	public static boolean isNumInArray(int[] array, int num) {
 		for (int i : array) {
 			if (i == num)
@@ -243,6 +305,12 @@ public class ArrayUtils {
 		return false;
 	}
 
+	/**
+	 * Performs a binary search to find a value in an integer array
+	 * @param array
+	 * @param num - number to find
+	 * @return - true if found
+	 */
 	public static boolean binarySearch(int[] array, int num) {
 		int midPoint = (int) Math.floor(array.length / 2);
 
@@ -278,6 +346,12 @@ public class ArrayUtils {
 		return false;
 	}
 	
+	/**
+	 * Method to first sort the array and then use the given binarySearch method
+	 * @param array
+	 * @param num - number to find in array
+	 * @return - true if found
+	 */
 	public static boolean binarySearchAndSort(int[] array, int num) {
 		array = insertionSort(array);
 		return binarySearch(array, num);
