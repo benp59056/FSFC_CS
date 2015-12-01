@@ -1,0 +1,16 @@
+package net.picklez.as.exercises.arraylists.modules;
+
+import java.util.ArrayList;
+
+/**
+ * @author Ben Pickering
+ * @since 1 Dec 2015 | 09:10:51
+ */
+
+public class ArrayListModulesExample {
+
+	public static void main(String[] args) {
+		ArrayList<Module> modules = new ArrayList();
+	}
+	
+}

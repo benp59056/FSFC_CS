@@ -1,0 +1,23 @@
+package net.picklez.as.exercises.arraylists.modules;
+
+import java.util.ArrayList;
+
+import net.picklez.utils.SystemUtils;
+
+/**
+ * @author Ben Pickering
+ * @since 1 Dec 2015 | 09:10:51
+ */
+
+public class ArrayListModulesExample {
+
+	public static void main(String[] args) {
+		ArrayList<Module> modules = new ArrayList<Module>();
+		modules.add(new Module("Help", "Displays help", "...", 1.0));
+		
+		for (Module m : modules) {
+			SystemUtils.printWithTime(m.asString());
+		}
+	}
+	
+}

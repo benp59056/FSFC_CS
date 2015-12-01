@@ -1,0 +1,14 @@
+package net.picklez.as.exercises.arraylists;
+
+/**
+ * @author Ben Pickering
+ * @since 1 Dec 2015 | 09:10:51
+ */
+
+public class ArrayListExample {
+
+	public static void main(String[] args) {
+		
+	}
+	
+}

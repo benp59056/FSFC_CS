@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ArrayListExample.java&apos; to &apos;AS_ComputerScience/src/net.picklez.as.exercises.arraylists.modules&apos;&#x0D;&#x0A;- Original project: &apos;AS_ComputerScience&apos;&#x0D;&#x0A;- Destination element: &apos;AS_ComputerScience/src/net.picklez.as.exercises.arraylists.modules&apos;&#x0D;&#x0A;- Original element: &apos;net.picklez.as.exercises.arraylists.ArrayListExample.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;net.picklez.as.exercises.arraylists.modules" element1="/src&lt;net.picklez.as.exercises.arraylists{ArrayListExample.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1448961138443" units="1" version="1.0"/>
+</session>
