@@ -19,7 +19,7 @@ public class Book {
 		this.lines.add(s);
 	}
 	
-	public ArrayList<String> getLines() {
-		return this.lines;
+	public void createPeople() {
+		
 	}
 }

@@ -18,8 +18,4 @@ public class Book {
 	public void addLine(String s) {
 		this.lines.add(s);
 	}
-	
-	public ArrayList<String> getLines() {
-		return this.lines;
-	}
 }

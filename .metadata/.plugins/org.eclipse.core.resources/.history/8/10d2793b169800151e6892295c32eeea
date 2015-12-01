@@ -29,7 +29,6 @@ public class AddressBook {
 		this.log("Starting up address book...");
 		this.people = new ArrayList<Person>();
 		this.book = new Book();
-		this.log("Finished set-up");
 	}
 	
 	private void loadFile() {

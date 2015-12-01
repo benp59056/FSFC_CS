@@ -3,7 +3,6 @@ package net.picklez.as.exercises.addressbook;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 
 /**
  * @author Ben Pickering
@@ -13,7 +12,6 @@ import java.util.ArrayList;
 public class AddressBook {
 	
 	private Book book;
-	private ArrayList<Person> people;
 	
 	public AddressBook() {
 		this.init();
@@ -27,12 +25,10 @@ public class AddressBook {
 	
 	private void init() {
 		this.log("Starting up address book...");
-		this.people = new ArrayList<Person>();
-		this.book = new Book();
-		this.log("Finished set-up");
 	}
 	
 	private void loadFile() {
+		this.book = new Book();
 		this.log("Loading address book from file");
 		try {
 			BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\CompUser\\My Documents\\bookAsCSV.csv"));
@@ -52,9 +48,7 @@ public class AddressBook {
 	private void convertBook() {
 		int count = 0;
 		for (String s : this.book.getLines()) {
-			if (count > 0) {
-				
-			}
+			
 			count++;
 		}
 	}
