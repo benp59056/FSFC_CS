@@ -3,20 +3,29 @@ package net.picklez.utils.collections;
 /**
  * @author Ben Pickering
  * @since 27 Nov 2015 | 13:16:10
+ * A basic LinkedList class
  */
 
 public class PLinkedList {
 
 	private PLink first;
-	
+
 	public PLinkedList() {
 		this.first = null;
 	}
 	
+	/**
+	 * Returns whether list is empty or not
+	 * @return true if empty
+	 */
 	public boolean isEmpty() {
 		return first == null;
 	}
 	
+	/**
+	 * Will insert parameter into front of list
+	 * @param link - new link to insert
+	 */
 	public void insertFirst(PLink link) {
 		if (this.first != null)
 			link.setNextLink(this.first);
@@ -24,10 +33,18 @@ public class PLinkedList {
 		this.first = link;
 	}
 	
+	/**
+	 * Will return the first link in the list
+	 * @return PLink - first link in list
+	 */
 	public PLink getFirst() {
 		return this.first;
 	}
 	
+	/**
+	 * Will insert parameter at the end of the list
+	 * @param o - content to be added to the list
+	 */
 	public void insertLast(Object o) {
 		PLink link = new PLink(o);
 		
@@ -45,6 +62,10 @@ public class PLinkedList {
 		}
 	}
 	
+	/**
+	 * Will insert parameter at the front of the list
+	 * @param o - content to be added to the list
+	 */
 	public void insertFirst(Object o) {
 		PLink link = new PLink(o);
 		
@@ -54,6 +75,10 @@ public class PLinkedList {
 		this.first = link;
 	}
 	
+	/**
+	 * Deletes the first link in the list
+	 * @return PLink - instance of the deleted link
+	 */
 	public PLink deleteFirst() {
 		PLink toDelete = this.first;
 		this.first = toDelete.getNextLink();
@@ -61,6 +86,7 @@ public class PLinkedList {
 	}
 	
 	/**
+	 * Inserts second parameter after first
 	 * @param first -- the original link in list
 	 * @param last -- the new link to be added to list
 	 */
@@ -76,6 +102,11 @@ public class PLinkedList {
 		}
 	}
 	
+	/**
+	 * Searches for link in list
+	 * @param link - link to find
+	 * @return - instance of link if found, null if not
+	 */
 	public PLink findLink(PLink link) {
 		PLink current = first;
 		while (current != null) {
@@ -86,6 +117,9 @@ public class PLinkedList {
 		return null;
 	}
 	
+	/**
+	 * Prints out the list in a formatted manner
+	 */
 	public void displayList() {
 		System.out.println("List (first-> last): ");
 		PLink current = first;
@@ -96,6 +130,11 @@ public class PLinkedList {
 		System.out.println(" ");
 	}
 
+	/**
+	 * Removes the specified link from list
+	 * @param link - link to be removed from list
+	 * @return - true if was removed, false if not
+	 */
 	public boolean remove(PLink link) {
 		PLink current = first;
 		while (current != null) {
@@ -108,6 +147,10 @@ public class PLinkedList {
 		return false;
 	}
 
+	/**
+	 * Shows if list has a first element
+	 * @return - false if empty
+	 */
 	public boolean hasFirst() {
 		return this.first != null;
 	}

@@ -3,6 +3,7 @@ package net.picklez.utils.queues;
 /**
  * @author Ben Pickering
  * @since 20 Nov 2015 | 13:34:27
+ * Lalin's Queue class - not documented
  */
 
 public class LalinQueue {
