@@ -39,12 +39,15 @@ public class CommandManager {
 		String line = scanner.nextLine();
 		for (Command c : this.commands) {
 			if (line.toLowerCase().startsWith(c.getName().toLowerCase())) {
-				c.onCommand();
 				if (c.hasArgs()) {
 					if (line.length() > c.getName().length() + 2) 
 						c.onCommand(line.substring(c.getName().length() + 1, line.length()));
-					 else 
+					 else {
 						System.out.println("Could not process parameters");
+						c.onCommand();
+					 }
+				} else {
+					c.onCommand();
 				}
 				found = true;
 				System.out.println("Please enter another command: ");

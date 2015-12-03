@@ -6,10 +6,14 @@ import net.picklez.entities.Person;
 /**
  * @author Ben Pickering
  * @since 1 Dec 2015 | 16:28:47
+ * Command to find a person with query inputted
  */
 
 public class CommandFindPerson extends Command {
 
+	/**
+	 * Uses super class to set variables
+	 */
 	public CommandFindPerson() {
 		super("Find", "Finds a person with parameter given");
 		this.setHasArgs(true);
@@ -19,6 +23,10 @@ public class CommandFindPerson extends Command {
 		
 	}
 	
+	/**
+	 * Searches through address book to find person matching search
+	 * criteria
+	 */
 	@Override
 	public void onCommand(String args) {
 		boolean found = false;

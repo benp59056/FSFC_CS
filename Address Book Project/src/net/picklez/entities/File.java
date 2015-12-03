@@ -10,18 +10,25 @@ import java.util.ArrayList;
 /**
  * @author Ben Pickering
  * @since 1 Dec 2015 | 15:31:48
+ * Custom File class to hold file contents and its path
  */
 public class File {
 
 	private ArrayList<String> lines;
 	private String filePath;
 
+	/**
+	 * Loads content of file with path s
+	 */
 	public File(String s) {
 		this.filePath = s;
 		this.lines = new ArrayList<String>(); 
 		this.loadContent();
 	}
 
+	/**
+	 * Loads the content of the file into an arraylist of lines
+	 */
 	private void loadContent() {
 		try {
 			BufferedReader bufferedReader = new BufferedReader(new FileReader(this.filePath));
@@ -52,6 +59,10 @@ public class File {
 		}
 	}
 	
+	/**
+	 * Writes over contents of current file with parameter s
+	 * @param s
+	 */
 	public void writeOverFile(String s) {
 		try {
 			PrintWriter printWriter = new PrintWriter(new java.io.File(this.filePath));
@@ -64,6 +75,9 @@ public class File {
 		}
 	}
 
+	/**
+	 * Returns the lines of the file as an arraylist
+	 */
 	public ArrayList<String> getLines() {
 		return this.lines;
 	}

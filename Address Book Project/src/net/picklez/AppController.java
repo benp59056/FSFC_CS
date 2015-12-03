@@ -9,6 +9,7 @@ import net.picklez.managers.FileManager;
 /**
  * @author Ben Pickering
  * @since 1 Dec 2015 | 14:56:53
+ * Main class for application
  */
 
 public class AppController {
@@ -17,15 +18,25 @@ public class AppController {
 	private AddressBook addressBook;
 	private CommandManager commandManager;
 
+	/**
+	 * Performs required start-up method, then handles input received via console
+	 */
 	public AppController() {
 		this.init();
 		this.takeInput();
 	}
 
+	/**
+	 * Begins application by instantiating current class
+	 */
 	public static void main(String[] args) {
 		new AppController();
 	}
 
+	/**
+	 * Creates an instance of the FileManager and creates an instance of
+	 * the AddressBook class from the data kept in the file
+	 */
 	private void init() {
 		this.log("Starting up application...");
 		this.fileManager = new FileManager("C:\\Users\\CompUser\\My Documents\\bookAsCSV.csv");
@@ -34,10 +45,18 @@ public class AppController {
 		this.log("Finished start-up");
 	}
 
+	/**
+	 * Logging method to reduce time spent printing out debug-log-calls
+	 * @param s - String to print
+	 */
 	private void log(String s) {
 		System.out.println(s);
 	}
 
+	/**
+	 * Takes the input constantly until program unexpectedly closes or user inputs
+	 * 'exit' command
+	 */
 	private void takeInput() {
 		this.commandManager = new CommandManager(this.addressBook);
 		System.out.println("Please enter a command (use \"help\" if you have no idea)");
