@@ -73,9 +73,6 @@ public class AddressBook {
 		return this.people;
 	}
 	
-	/**
-	 * Prints out the entire address book
-	 */
 	public void dumpData() {
 		System.out.println("Dumping address book:");
 		for (Person p : people) { 

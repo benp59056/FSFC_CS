@@ -8,7 +8,6 @@ import net.picklez.entities.Person;
 /**
  * @author Ben Pickering
  * @since 1 Dec 2015 | 15:24:57
- * Class to manage people
  */
 
 public class AddressBook {
@@ -16,17 +15,11 @@ public class AddressBook {
 	private ArrayList<Person> people;
 	private File file;
 	
-	/**
-	 * Creates address book from file
-	 */
 	public AddressBook(File file) {
 		this.people = new ArrayList<Person>();
 		this.file = file;
 	}
 	
-	/**
-	 * Populates address book from file contents
-	 */
 	public void populate() {
 		for (String s : this.file.getLines()) {
 			if (!s.equals("Name,DoB,Address,Postcode,Gender,Telephone") && s.trim() != "") {
@@ -36,26 +29,16 @@ public class AddressBook {
 		}
 	}
 	
-	/**
-	 * Adds person to address book
-	 */
 	public void addPerson(Person p) {
 		this.people.add(p);
 		this.updateFile();
 	}
-
-	/**
-	 * Removes person from address book
-	 * @param p
-	 */
+	
 	public void removePerson(Person p) {
 		this.people.remove(p);
 		this.updateFile();
 	}
 	
-	/**
-	 * Updates file to new content
-	 */
 	private void updateFile() {
 		String result = "Name,DoB,Address,Postcode,Gender,Telephone";
 		
@@ -66,16 +49,10 @@ public class AddressBook {
 		this.file.writeOverFile(result);
 	}
 	
-	/**
-	 * Returns people as arraylist
-	 */
 	public ArrayList<Person> getPeople() {
 		return this.people;
 	}
 	
-	/**
-	 * Prints out the entire address book
-	 */
 	public void dumpData() {
 		System.out.println("Dumping address book:");
 		for (Person p : people) { 
