@@ -1,0 +1,17 @@
+package net.picklez.as.exercises.arraylists;
+
+import java.util.ArrayList;
+
+/**
+ * @author Ben Pickering
+ * @since 3 Dec 2015 | 11:25:52
+ */
+
+public class SwitchingValues {
+
+	public static void main(String[] args) {
+		ArrayList<String> array = new ArrayList<String>();
+		array.add("four");
+	}
+	
+}

@@ -1,0 +1,32 @@
+package net.picklez.as.exercises.arraylists;
+
+import java.util.ArrayList;
+
+/**
+ * @author Ben Pickering
+ * @since 3 Dec 2015 | 11:30:38
+ */
+
+public class ModifyingData {
+
+	public static void main(String[] args) {
+		ArrayList<String> array = new ArrayList<String>();
+		String s = "this is lots of fun for every Java programmer";
+		String[] split = s.split(" ");
+		for (String sp : split) {
+			array.add(sp);
+			System.out.println(sp);
+		}
+		
+		makeLength4(array);
+		System.out.println("after makeLength4...");
+		
+		for (String s : array) {
+			System.out.println(s);
+		}
+	}
+	
+	private static void makeLength4(ArrayList<String> array) {
+		
+	}
+}
