@@ -48,7 +48,6 @@ public class File {
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.out.println("Failed to read file");
-			System.exit(0);
 		}
 	}
 	

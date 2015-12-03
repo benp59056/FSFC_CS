@@ -22,8 +22,7 @@ public class CommandAddPerson extends Command {
 	@Override
 	public void onCommand(String args) {
 		if (!args.contains(",")) {
-			this.print("Parameters were incorrect");
-			return;
+			break;
 		}
 		String[] split = args.split(",");
 		

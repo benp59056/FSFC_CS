@@ -43,12 +43,10 @@ public class File {
 			} catch (IOException e1) {
 				e1.printStackTrace();
 				System.out.println("Failed to create file");
-				System.exit(0);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.out.println("Failed to read file");
-			System.exit(0);
 		}
 	}
 	

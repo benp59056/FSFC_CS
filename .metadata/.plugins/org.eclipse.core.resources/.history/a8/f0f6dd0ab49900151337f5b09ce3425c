@@ -47,8 +47,7 @@ public class AppController {
 			try {
 				this.commandManager.processInput(scanner);
 			} catch (Exception e) {
-				e.printStackTrace();
-				System.out.println("An error occurred; closing application");
+
 			}
 		}
 		scanner.close();

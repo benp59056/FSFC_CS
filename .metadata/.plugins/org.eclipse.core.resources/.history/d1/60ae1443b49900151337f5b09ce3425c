@@ -43,8 +43,9 @@ public class CommandManager {
 				if (c.hasArgs()) {
 					if (line.length() > c.getName().length() + 2) 
 						c.onCommand(line.substring(c.getName().length() + 1, line.length()));
-					 else 
-						System.out.println("Could not process parameters");
+					 else {
+							System.out.println("Could not process parameters");
+						}
 				}
 				found = true;
 				System.out.println("Please enter another command: ");

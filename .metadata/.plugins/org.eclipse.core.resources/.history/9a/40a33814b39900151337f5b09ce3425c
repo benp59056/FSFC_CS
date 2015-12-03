@@ -19,11 +19,11 @@ public class CommandManager {
 	public CommandManager(AddressBook addressBook) {
 		commandManager = this;
 		this.commands = new ArrayList<Command>();
-		this.commands.add(new CommandAddPerson());
-		this.commands.add(new CommandDisplay());
-		this.commands.add(new CommandExit());
-		this.commands.add(new CommandFindPerson());
 		this.commands.add(new CommandHelp());
+		this.commands.add(new CommandExit());
+		this.commands.add(new CommandDisplay());
+		this.commands.add(new CommandAddPerson());
+		this.commands.add(new CommandFindPerson());
 		
 		for (Command c : this.commands) {
 			c.setAddressBook(addressBook);
@@ -41,13 +41,9 @@ public class CommandManager {
 			if (line.toLowerCase().startsWith(c.getName().toLowerCase())) {
 				c.onCommand();
 				if (c.hasArgs()) {
-					if (line.length() > c.getName().length() + 2) 
-						c.onCommand(line.substring(c.getName().length() + 1, line.length()));
-					 else 
-						System.out.println("Could not process parameters");
+					c.onCommand(line.substring(c.getName().length() + 1, line.length()));
 				}
 				found = true;
-				System.out.println("Please enter another command: ");
 				break;
 			}
 		}

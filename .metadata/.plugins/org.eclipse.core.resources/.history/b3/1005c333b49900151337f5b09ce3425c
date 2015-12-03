@@ -40,11 +40,10 @@ public class CommandManager {
 		for (Command c : this.commands) {
 			if (line.toLowerCase().startsWith(c.getName().toLowerCase())) {
 				c.onCommand();
-				if (c.hasArgs()) {
-					if (line.length() > c.getName().length() + 2) 
-						c.onCommand(line.substring(c.getName().length() + 1, line.length()));
-					 else 
-						System.out.println("Could not process parameters");
+				if (c.hasArgs() && line.length() > c.getName().length() + 2) {
+					c.onCommand(line.substring(c.getName().length() + 1, line.length()));
+				} else {
+					System.out.println("Could not process parameters");
 				}
 				found = true;
 				System.out.println("Please enter another command: ");
