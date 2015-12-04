@@ -1,0 +1,7 @@
+package net.picklez.commands;
+
+import net.picklez.utils.*;
+
+public class CommandMeetings {
+
+}

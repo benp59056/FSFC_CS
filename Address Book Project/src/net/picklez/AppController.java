@@ -39,7 +39,7 @@ public class AppController {
 	 */
 	private void init() {
 		this.log("Starting up application...");
-		this.fileManager = new FileManager("C:\\Users\\CompUser\\My Documents\\bookAsCSV.csv");
+		this.fileManager = new FileManager("C:\\Users\\CompUser\\Documents\\Address Book\\files\\book.csv");
 
 		this.addressBook = this.fileManager.createBookFromFile();
 		this.log("Finished start-up");

@@ -28,6 +28,7 @@ public class CommandManager {
 		this.commands.add(new CommandExit());
 		this.commands.add(new CommandFindPerson());
 		this.commands.add(new CommandHelp());
+		this.commands.add(new CommandMeetings());
 		
 		for (Command c : this.commands) {
 			c.setAddressBook(addressBook);
@@ -56,6 +57,8 @@ public class CommandManager {
 						System.out.println("Could not process parameters");
 						c.onCommand();
 					 }
+				} else if (c.shouldUseScanner()) {
+					c.onCommandWithScanner(scanner);
 				} else {
 					c.onCommand();
 				}
@@ -69,7 +72,7 @@ public class CommandManager {
 			System.out.println("Could not process input, please enter \"help\" if you need assistance");
 		}
 	}
-
+	
 	/**
 	 * Returns the commands as an arraylist
 	 */

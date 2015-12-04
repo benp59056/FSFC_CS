@@ -1,5 +1,7 @@
 package net.picklez.entities;
 
+import java.util.Scanner;
+
 import net.picklez.managers.AddressBook;
 
 /**
@@ -16,6 +18,7 @@ public abstract class Command {
 	protected AddressBook addressBook;
 	
 	protected boolean hasArgs = false;
+	protected boolean shouldUseScanner = false;
 	
 	/**
 	 * Sets name and description for command
@@ -50,18 +53,30 @@ public abstract class Command {
 	
 	/**
 	 * Returns true if command should take arguments
-	 * @return
 	 */
 	public boolean hasArgs() {
 		return this.hasArgs;
 	}
 	
 	/**
+	 * Returns true if command should use scanner when parsing arguments
+	 */
+	public boolean shouldUseScanner() {
+		return this.shouldUseScanner;
+	}
+	
+	/**
 	 * Internal method to set whether command should take arguments
-	 * @param flag
 	 */
 	protected void setHasArgs(boolean flag) {
 		this.hasArgs = flag;
+	}
+	
+	/**
+	 * Internal method to set whether command should use scanner 
+	 */
+	protected void setUsesScanner(boolean flag) {
+		this.shouldUseScanner = flag;
 	}
 	
 	/**
@@ -73,6 +88,13 @@ public abstract class Command {
 	 * Method to run command with arguments
 	 */
 	public void onCommand(String args) {
+		
+	}
+	
+	/**
+	 * Method to run command with scanner
+	 */
+	public void onCommandWithScanner(Scanner scanner) {
 		
 	}
 

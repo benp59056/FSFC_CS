@@ -117,26 +117,8 @@ public class Person {
 	 * Returns true if data contains query
 	 */
 	public boolean containsData(String s) {
-//		if (this.name.toLowerCase().startsWith(s) || this.name.equalsIgnoreCase(s))
-//			return true;
-//		
-//		if (this.dateOfBirth.toLowerCase().startsWith(s) || this.dateOfBirth.equalsIgnoreCase(s))
-//			return true;
-//		
-//		if (this.address.toLowerCase().startsWith(s) || this.address.equalsIgnoreCase(s))
-//			return true;
-//		
-//		if (this.postcode.toLowerCase().startsWith(s) || this.postcode.equalsIgnoreCase(s))
-//			return true;
-//		
-//		if (this.gender.toLowerCase().startsWith(s) || this.gender.equalsIgnoreCase(s))
-//			return true;
-//		
-//		if (this.telephone.toLowerCase().startsWith(s) || this.telephone.equalsIgnoreCase(s))
-//			return true;
-		
-		if (this.asCSVFormat().toLowerCase().contains(s.toLowerCase())) return true;
-		
+		if (this.asCSVFormat().toLowerCase().contains(s.toLowerCase())) 
+			return true;
 		return false;
 	}
 	

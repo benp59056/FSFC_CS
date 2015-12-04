@@ -1,0 +1,21 @@
+package net.picklez.commands.meetings;
+
+import net.picklez.entities.Command;
+
+/**
+ * @author Ben Pickering
+ * @since 4 Dec 2015 | 13:57:36
+ */
+
+public class MeetingCommandExit extends Command {
+
+	public MeetingCommandExit() {
+		super("Exit", "Exits out of meeting commands");
+	}
+
+	@Override
+	public void onCommand() {
+		
+	}
+
+}
