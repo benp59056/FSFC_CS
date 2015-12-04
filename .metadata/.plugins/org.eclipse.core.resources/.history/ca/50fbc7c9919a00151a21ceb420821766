@@ -1,7 +1,6 @@
 package net.picklez.entities;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 
 /**
  * @author Ben Pickering
@@ -18,8 +17,6 @@ public class Meeting {
 	private String notes;
 	
 	private int id;
-	
-	private Calendar date;
 	
 	public Meeting(String topic) {
 		this.people = new ArrayList<Person>();

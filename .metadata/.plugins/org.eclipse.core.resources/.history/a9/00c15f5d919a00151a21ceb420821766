@@ -18,6 +18,7 @@ public class AppController {
 	private FileManager fileManager;
 	private AddressBook addressBook;
 	private CommandManager commandManager;
+	private MeetingsManager meetingsManager;
 
 	/**
 	 * Performs required start-up method, then handles input received via console
@@ -43,7 +44,6 @@ public class AppController {
 		this.fileManager = new FileManager("C:\\Users\\CompUser\\Documents\\Address Book\\files\\book.csv");
 
 		this.addressBook = this.fileManager.createBookFromFile();
-		this.fileManager.createMeetingsManagerFromFile();
 		this.log("Finished start-up");
 	}
 

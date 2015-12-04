@@ -35,9 +35,5 @@ public class FileManager {
 		return book;
 	}
 	
-	public MeetingsManager createMeetingsManagerFromFile() {
-		MeetingsManager manager = new MeetingsManager(this.file);
-		manager.loadFromFile();
-		return manager;
-	}
+	
 }

@@ -5,7 +5,6 @@ import java.util.Scanner;
 import net.picklez.managers.AddressBook;
 import net.picklez.managers.CommandManager;
 import net.picklez.managers.FileManager;
-import net.picklez.managers.MeetingsManager;
 
 /**
  * @author Ben Pickering
@@ -43,7 +42,6 @@ public class AppController {
 		this.fileManager = new FileManager("C:\\Users\\CompUser\\Documents\\Address Book\\files\\book.csv");
 
 		this.addressBook = this.fileManager.createBookFromFile();
-		this.fileManager.createMeetingsManagerFromFile();
 		this.log("Finished start-up");
 	}
 

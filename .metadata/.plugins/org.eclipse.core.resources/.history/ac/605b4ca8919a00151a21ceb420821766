@@ -1,7 +1,6 @@
 package net.picklez.entities;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 
 /**
  * @author Ben Pickering
@@ -16,10 +15,6 @@ public class Meeting {
 
 	private String topic;
 	private String notes;
-	
-	private int id;
-	
-	private Calendar date;
 	
 	public Meeting(String topic) {
 		this.people = new ArrayList<Person>();
@@ -48,10 +43,6 @@ public class Meeting {
 		return this.notes;
 	}
 	
-	public int getID() {
-		return this.id;
-	}
-	
 	public void setMeetingHolder(Person p) {
 		this.meetingHolder = p;
 	}
@@ -62,10 +53,6 @@ public class Meeting {
 	
 	public void addNote(String s) {
 		this.notes += "\n" + s;
-	}
-	
-	public void setID(int i) {
-		this.id = i;
 	}
 	
 	public void displayMeeting() {
