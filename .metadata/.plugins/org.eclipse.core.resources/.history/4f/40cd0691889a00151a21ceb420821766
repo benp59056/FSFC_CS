@@ -9,7 +9,6 @@ import net.picklez.entities.Command;
 /**
  * @author Ben Pickering
  * @since 1 Dec 2015 | 15:59:05
- * Manages commands
  */
 
 public class CommandManager {
@@ -70,9 +69,6 @@ public class CommandManager {
 		}
 	}
 
-	/**
-	 * Returns the commands as an arraylist
-	 */
 	public ArrayList<Command> getCommands() {
 		return this.commands;
 	}

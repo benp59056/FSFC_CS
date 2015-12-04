@@ -3,7 +3,6 @@ package net.picklez.utils;
 /**
  * @author Ben Pickering
  * @since 1 Dec 2015 | 15:32:31
- * Supplies essential string-based methods
  */
 public class StringUtils {
 

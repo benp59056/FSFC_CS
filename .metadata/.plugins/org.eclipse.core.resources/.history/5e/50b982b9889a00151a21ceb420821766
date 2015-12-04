@@ -12,23 +12,14 @@ public class FileManager {
 
 	private File file;
 
-	/**
-	 * Creates a new instance of File with path supplied
-	 */
 	public FileManager(String s) {
 		this.file = new File(s);
 	}
 
-	/**
-	 * Returns current file in manager
-	 */
 	public File getFile() {
 		return this.file;
 	}
-
-	/**
-	 * Creates an AddressBook object from file and populates it
-	 */
+	
 	public AddressBook createBookFromFile() {
 		AddressBook book = new AddressBook(this.file);
 		book.populate();

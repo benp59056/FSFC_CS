@@ -28,6 +28,7 @@ public class FileManager {
 
 	/**
 	 * Creates an AddressBook object from file and populates it
+	 * @return
 	 */
 	public AddressBook createBookFromFile() {
 		AddressBook book = new AddressBook(this.file);

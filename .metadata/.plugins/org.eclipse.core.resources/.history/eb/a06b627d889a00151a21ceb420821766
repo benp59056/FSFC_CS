@@ -9,7 +9,6 @@ import net.picklez.entities.Command;
 /**
  * @author Ben Pickering
  * @since 1 Dec 2015 | 15:59:05
- * Manages commands
  */
 
 public class CommandManager {
@@ -17,9 +16,6 @@ public class CommandManager {
 	private ArrayList<Command> commands;
 	private static CommandManager commandManager;
 
-	/**
-	 * Creates only instance of commands and sets their address book instance
-	 */
 	public CommandManager(AddressBook addressBook) {
 		commandManager = this;
 		this.commands = new ArrayList<Command>();
@@ -34,16 +30,10 @@ public class CommandManager {
 		}
 	}
 
-	/**
-	 * Returns the current instance of manager
-	 */
 	public static CommandManager getInstance() {
 		return commandManager;
 	}
 
-	/**
-	 * Processes input from console and sends data off to appropriate command
-	 */
 	public void processInput(Scanner scanner) {
 		boolean found = false;
 		String line = scanner.nextLine();
@@ -70,9 +60,6 @@ public class CommandManager {
 		}
 	}
 
-	/**
-	 * Returns the commands as an arraylist
-	 */
 	public ArrayList<Command> getCommands() {
 		return this.commands;
 	}
