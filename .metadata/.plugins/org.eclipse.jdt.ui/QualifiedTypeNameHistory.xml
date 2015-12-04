@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="net.picklez.utils.exceptions.CustomException"/>
 <fullyQualifiedTypeName name="net.picklez.utils.Timer"/>
 <fullyQualifiedTypeName name="net.picklez.utils.ArrayUtils"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.io.PrintStream"/>
@@ -25,5 +24,11 @@
 <fullyQualifiedTypeName name="net.picklez.utils.SystemUtils"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="net.picklez.commands.meetings.MeetingCommandExit"/>
+<fullyQualifiedTypeName name="net.picklez.commands.CommandMeetings"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="net.picklez.entities.File"/>
+<fullyQualifiedTypeName name="net.picklez.managers.MeetingsManager"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
 </qualifiedTypeNameHistroy>
