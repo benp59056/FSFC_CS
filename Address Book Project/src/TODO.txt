@@ -1,0 +1,8 @@
+/** @TODO:
+ * Add reflection to dynamically load modules for commands
+ * Create C# launcher to set resource management
+ * Complete meetings
+ * Compare contacts' meetings with one another
+ * Create interface
+ * Add serialisation for easier settings-loading
+ */

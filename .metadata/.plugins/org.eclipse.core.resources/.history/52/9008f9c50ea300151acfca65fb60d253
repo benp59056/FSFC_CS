@@ -22,9 +22,6 @@ public class CommandManager {
 	 * Creates only instance of commands and sets their address book instance
 	 */
 	public CommandManager(AddressBook addressBook) {
-		/**
-		 * Add dynamic loading with reflection -- @TODO
-		 */
 		commandManager = this;
 		this.commands = new ArrayList<Command>();
 		this.commands.add(new CommandAddPerson());
@@ -48,14 +45,12 @@ public class CommandManager {
 
 	/**
 	 * Processes input from console and sends data off to appropriate command
-	 * Uses Levenshtein distance algorithm to find closest command to input
 	 */
 	public void processInput(Scanner scanner) {
 		boolean found = false;
-		int closestCommand = 25;
-		String line = scanner.nextLine();
 		Command closest = null;
-		
+		int closestCommand = 100;
+		String line = scanner.nextLine();
 		for (Command c : this.commands) {
 
 			int distance = LevenshteinCalculator.compare(line, c.getName());
@@ -69,6 +64,7 @@ public class CommandManager {
 					if (line.length() > c.getName().length() + 2) 
 						c.onCommand(line.substring(c.getName().length() + 1, line.length()));
 					else {
+						System.out.println("Could not process parameters");
 						c.onCommand();
 					}
 				} else if (c.shouldUseScanner()) {
@@ -91,7 +87,7 @@ public class CommandManager {
 				else 
 					System.out.println("Okay. Please enter \"help\" if you need assistance. Input next command now:");
 			} else {
-				System.out.println("Could not find closest command. Please enter \"help\" if you need assistance. Input next command now:");
+				System.out.println("Okay. Please enter \"help\" if you need assistance. Input next command now:");
 			}
 		}
 	}

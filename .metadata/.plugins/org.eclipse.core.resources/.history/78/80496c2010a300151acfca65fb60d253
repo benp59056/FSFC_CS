@@ -22,9 +22,6 @@ public class CommandManager {
 	 * Creates only instance of commands and sets their address book instance
 	 */
 	public CommandManager(AddressBook addressBook) {
-		/**
-		 * Add dynamic loading with reflection -- @TODO
-		 */
 		commandManager = this;
 		this.commands = new ArrayList<Command>();
 		this.commands.add(new CommandAddPerson());

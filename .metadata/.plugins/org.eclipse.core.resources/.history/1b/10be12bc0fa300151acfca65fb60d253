@@ -23,8 +23,7 @@ public class CommandAddPerson extends Command {
 	 * Method essential for all commands
 	 */
 	public void onCommand() {
-		this.print("Please provide paramaters: name,dob,address,postcode,gender,phone");
-		return;
+		
 	}
 	
 	/**
