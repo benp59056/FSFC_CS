@@ -31,4 +31,5 @@
 <fullyQualifiedTypeName name="net.picklez.entities.File"/>
 <fullyQualifiedTypeName name="net.picklez.managers.MeetingsManager"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="net.picklez.utils.LevenshteinCalculator"/>
 </qualifiedTypeNameHistroy>
