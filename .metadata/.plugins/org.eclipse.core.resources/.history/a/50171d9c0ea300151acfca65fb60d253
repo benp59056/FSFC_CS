@@ -84,7 +84,7 @@ public class CommandManager {
 			if (inp.startsWith("y")) 
 				closest.onCommand();
 			else 
-				System.out.println("Okay. Please enter \"help\" if you need assistance. Input next command now:");
+				System.out.println("Okay. Please enter \"help\" if you need assistance");
 
 		}
 	}

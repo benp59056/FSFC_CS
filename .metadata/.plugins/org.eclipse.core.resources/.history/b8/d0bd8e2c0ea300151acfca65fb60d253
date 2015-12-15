@@ -1,0 +1,10 @@
+package net.picklez.utils;
+
+/**
+ * @author Ben Pickering
+ * @since 15 Dec 2015 | 09:28:08
+ */
+
+public class LevenshteinCalculator {
+
+}

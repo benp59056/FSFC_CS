@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 import net.picklez.commands.*;
 import net.picklez.entities.Command;
-import net.picklez.utils.LevenshteinCalculator;
 
 /**
  * @author Ben Pickering
@@ -30,7 +29,7 @@ public class CommandManager {
 		this.commands.add(new CommandFindPerson());
 		this.commands.add(new CommandHelp());
 		this.commands.add(new CommandMeetings());
-
+		
 		for (Command c : this.commands) {
 			c.setAddressBook(addressBook);
 		}
@@ -48,25 +47,25 @@ public class CommandManager {
 	 */
 	public void processInput(Scanner scanner) {
 		boolean found = false;
-		Command closest = null;
-		int closestCommand = 100;
+		//Command closest = null;
+		//int closestCommand = 100;
 		String line = scanner.nextLine();
 		for (Command c : this.commands) {
-
-			int distance = LevenshteinCalculator.compare(line, c.getName());
-			if (distance < closestCommand) {
-				closest = c;
-				closestCommand = distance;
-			}
-
+			/**
+			 * int distance = LevenshteinDistance.compare(line, c.getName());
+			 * if (distance < closestCommand) {
+			 * 	closest = c;
+			 * closestCommand = distance;
+			 * }
+			 */
 			if (line.toLowerCase().startsWith(c.getName().toLowerCase())) {
 				if (c.hasArgs()) {
 					if (line.length() > c.getName().length() + 2) 
 						c.onCommand(line.substring(c.getName().length() + 1, line.length()));
-					else {
+					 else {
 						System.out.println("Could not process parameters");
 						c.onCommand();
-					}
+					 }
 				} else if (c.shouldUseScanner()) {
 					c.onCommandWithScanner(scanner);
 				} else {
@@ -79,16 +78,13 @@ public class CommandManager {
 		}
 
 		if (!found) {
+			System.out.println("Could not process input, please enter \"help\" if you need assistance");
+			
 			System.out.println("Did you mean \"" + closest.getName() + "\"? [y/n]");
-			String inp = scanner.nextLine().toLowerCase();
-			if (inp.startsWith("y")) 
-				closest.onCommand();
-			else 
-				System.out.println("Okay. Please enter \"help\" if you need assistance. Input next command now:");
-
+			   if (scanner.nextLine().toLowerCase().startsWith("y")) closest.onCommand();
 		}
 	}
-
+	
 	/**
 	 * Returns the commands as an arraylist
 	 */

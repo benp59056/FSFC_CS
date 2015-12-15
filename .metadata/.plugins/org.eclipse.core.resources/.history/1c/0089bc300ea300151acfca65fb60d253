@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 import net.picklez.commands.*;
 import net.picklez.entities.Command;
-import net.picklez.utils.LevenshteinCalculator;
 
 /**
  * @author Ben Pickering
@@ -53,7 +52,7 @@ public class CommandManager {
 		String line = scanner.nextLine();
 		for (Command c : this.commands) {
 
-			int distance = LevenshteinCalculator.compare(line, c.getName());
+			int distance = LevenshteinDistance.compare(line, c.getName());
 			if (distance < closestCommand) {
 				closest = c;
 				closestCommand = distance;
@@ -79,13 +78,10 @@ public class CommandManager {
 		}
 
 		if (!found) {
-			System.out.println("Did you mean \"" + closest.getName() + "\"? [y/n]");
-			String inp = scanner.nextLine().toLowerCase();
-			if (inp.startsWith("y")) 
-				closest.onCommand();
-			else 
-				System.out.println("Okay. Please enter \"help\" if you need assistance. Input next command now:");
+			System.out.println("Could not process input, please enter \"help\" if you need assistance");
 
+			System.out.println("Did you mean \"" + closest.getName() + "\"? [y/n]");
+			if (scanner.nextLine().toLowerCase().startsWith("y")) closest.onCommand();
 		}
 	}
 

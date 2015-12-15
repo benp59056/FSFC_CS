@@ -18,7 +18,6 @@ public class CommandExit extends Command {
 	}
 
 	public void onCommand() {
-		this.print("Exiting application");
 		System.exit(0);
 	}
 }
