@@ -51,13 +51,6 @@ public class CommandManager {
 		int closestCommand = 100;
 		String line = scanner.nextLine();
 		for (Command c : this.commands) {
-			/**
-			 * int distance = LevenshteinDistance.compare(line, c.getName());
-			 * if (distance < closestCommand) {
-			 * 	closest = c;
-			 * closestCommand = distance;
-			 * }
-			 */
 			if (line.toLowerCase().startsWith(c.getName().toLowerCase())) {
 				if (c.hasArgs()) {
 					if (line.length() > c.getName().length() + 2) 
