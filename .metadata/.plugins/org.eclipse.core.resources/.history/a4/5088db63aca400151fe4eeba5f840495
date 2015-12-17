@@ -2,10 +2,6 @@ package net.picklez;
 
 import java.util.Scanner;
 
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
-
-import net.picklez.gui.PGui;
 import net.picklez.managers.AddressBook;
 import net.picklez.managers.CommandManager;
 import net.picklez.managers.FileManager;
@@ -48,14 +44,6 @@ public class AppController {
 		this.addressBook = this.fileManager.createBookFromFile();
 		this.fileManager.createMeetingsManagerFromFile();
 		this.log("Finished start-up");
-		
-		try {
-			UIManager.setLookAndFeel("com.jtattoo.plaf.graphite.GraphiteLookAndFeel");
-		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
-				| UnsupportedLookAndFeelException e) {
-			e.printStackTrace();
-		}
-		new PGui();
 	}
 
 	/**

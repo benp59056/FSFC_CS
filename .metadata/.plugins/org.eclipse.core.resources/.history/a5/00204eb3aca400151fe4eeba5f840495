@@ -48,9 +48,10 @@ public class AppController {
 		this.addressBook = this.fileManager.createBookFromFile();
 		this.fileManager.createMeetingsManagerFromFile();
 		this.log("Finished start-up");
+
 		
 		try {
-			UIManager.setLookAndFeel("com.jtattoo.plaf.graphite.GraphiteLookAndFeel");
+			UIManager.setLookAndFeel("com.jtattoo.plaf.hifi.HiFiLookAndFeel");
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
 				| UnsupportedLookAndFeelException e) {
 			e.printStackTrace();
