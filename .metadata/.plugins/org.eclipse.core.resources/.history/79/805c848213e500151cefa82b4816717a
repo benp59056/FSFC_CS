@@ -1,0 +1,18 @@
+package net.picklez.as.exercises.challenge;
+
+import java.awt.EventQueue;
+
+/**
+ * @author Ben Pickering
+ * @since 8 Mar 2016 | 09:50:18
+ */
+
+public class ReactionTest {
+
+	public static void main(String[] args) {
+
+						ReactionGui frame = new ReactionGui();
+						frame.setVisible(true);
+	}
+	
+}

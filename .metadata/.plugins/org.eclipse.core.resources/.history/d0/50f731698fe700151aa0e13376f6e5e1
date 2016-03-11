@@ -1,0 +1,10 @@
+package net.picklez.as.exercises.challenge.puzzle;
+
+/**
+ * @author Ben Pickering
+ * @since 11 Mar 2016 | 13:44:30
+ */
+
+public class Puzzle {
+
+}

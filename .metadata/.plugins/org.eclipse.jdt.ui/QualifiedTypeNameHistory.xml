@@ -27,9 +27,17 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="net.picklez.commands.meetings.MeetingCommandExit"/>
 <fullyQualifiedTypeName name="net.picklez.commands.CommandMeetings"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="net.picklez.entities.File"/>
 <fullyQualifiedTypeName name="net.picklez.managers.MeetingsManager"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="net.picklez.utils.LevenshteinCalculator"/>
+<fullyQualifiedTypeName name="net.picklez.gui.PGui"/>
+<fullyQualifiedTypeName name="com.jtattoo.plaf.luna.LunaBorderFactory"/>
+<fullyQualifiedTypeName name="net.picklez.Settings"/>
+<fullyQualifiedTypeName name="javax.swing.JTextArea"/>
+<fullyQualifiedTypeName name="javax.swing.JCheckBox"/>
+<fullyQualifiedTypeName name="net.picklez.as.exercises.challenge.ReactionFrame"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 </qualifiedTypeNameHistroy>

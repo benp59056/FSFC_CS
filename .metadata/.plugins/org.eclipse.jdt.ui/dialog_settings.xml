@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Users\CompUser\Downloads\Java_development-2015-10-15\Java development\Libraries\Slick" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\Users\CompUser\Documents\libs" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="1" key="layout"/>
 		<item value="true" key="group_libraries"/>

@@ -1,0 +1,18 @@
+package net.picklez.as.exercises.challenge;
+
+/**
+ * @author Ben Pickering
+ * @since 8 Mar 2016 | 10:06:37
+ */
+
+public class Reaction {
+
+	private long startTime;
+	private long clickTime;
+	
+	public Reaction(long start, long click) {
+		this.startTime = start;
+		this.clickTime = click;
+	}
+	
+}

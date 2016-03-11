@@ -1,0 +1,10 @@
+package net.picklez.as.exercises.challenge.sort;
+
+/**
+ * @author Ben Pickering
+ * @since 11 Mar 2016 | 14:05:21
+ */
+
+public class SortResult {
+
+}
